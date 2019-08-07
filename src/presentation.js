@@ -117,6 +117,26 @@ export default class Presentation extends React.Component {
             </Text>
           </Appear>
         </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={1} fit caps>
+            DevOps is a good thing
+          </Heading>
+          <Appear>
+            <Text size={1} margin="20px 0px" textColor="tertiary" fit bold>
+              But What About <Keyword>everything</Keyword> else
+            </Text>
+          </Appear>
+          <Appear>
+            <Text size={1} margin="20px 0px" textColor="tertiary" fit bold>
+              Management, Culture... <Keyword>People</Keyword>
+            </Text>
+          </Appear>
+          <Appear>
+            <Text size={1} margin="20px 0px" textColor="tertiary" fit bold>
+              Maybe we also need <Keyword>OrgOps</Keyword>
+            </Text>
+          </Appear>
+        </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={1} textColor="secondary">
             Value Stream
