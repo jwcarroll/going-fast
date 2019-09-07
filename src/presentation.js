@@ -270,21 +270,17 @@ export default class Presentation extends React.Component {
             All Software Involves
           </Heading>
           <Layout style={{ justifyContent: "space-around" }}>
-            <Appear>
               <List ordered>
                 <ListItem>Design</ListItem>
                 <ListItem>Planning</ListItem>
                 <ListItem>Coding</ListItem>
               </List>
-            </Appear>
-            <Appear>
               <List ordered start={4}>
                 <ListItem>Testing</ListItem>
                 <ListItem style={{textDecoration:"line-through"}}>Integration</ListItem>
                 <ListItem>Deployment</ListItem>
                 <ListItem style={{textDecoration:"line-through"}}>User Testing</ListItem>
               </List>
-            </Appear>
           </Layout>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
