@@ -267,6 +267,28 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <Heading size={1} fit caps>
+            All Software Involves
+          </Heading>
+          <Layout style={{ justifyContent: "space-around" }}>
+            <Appear>
+              <List ordered>
+                <ListItem>Design</ListItem>
+                <ListItem>Planning</ListItem>
+                <ListItem>Coding</ListItem>
+              </List>
+            </Appear>
+            <Appear>
+              <List ordered start={4}>
+                <ListItem>Testing</ListItem>
+                <ListItem style={{textDecoration:"line-through"}}>Integration</ListItem>
+                <ListItem>Deployment</ListItem>
+                <ListItem style={{textDecoration:"line-through"}}>User Testing</ListItem>
+              </List>
+            </Appear>
+          </Layout>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading size={1} fit caps>
             <Keyword>Ignoring</Keyword> them leads to
           </Heading>
           <Appear>
@@ -1054,101 +1076,6 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={1} textColor="secondary">
-            Integration Problems
-          </Heading>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <Heading size={1} fit caps>
-            Big feature merge
-          </Heading>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              Infrequent merges into <Keyword>master</Keyword>
-            </Heading>
-          </Appear>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              Merging before release <Keyword>breaks</Keyword> things
-            </Heading>
-          </Appear>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              Features require lots of <Keyword>setup</Keyword>
-            </Heading>
-          </Appear>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <Heading size={1} fit caps>
-            Reasons
-          </Heading>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              <Keyword>Large</Keyword> batches
-            </Heading>
-          </Appear>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              <Keyword>Long</Keyword> Release Cycles
-            </Heading>
-          </Appear>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              Configuration knowledge is <Keyword>tacit</Keyword>
-            </Heading>
-          </Appear>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={1} textColor="secondary">
-            Solutions
-          </Heading>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <Heading size={1} fit caps>
-            Automate Everything
-          </Heading>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              CI Server to <Keyword>validate</Keyword> check-ins
-            </Heading>
-          </Appear>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              Automated tests provide <Keyword>confidence</Keyword>
-            </Heading>
-          </Appear>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              <Keyword>Automate</Keyword> configuration and setup
-            </Heading>
-          </Appear>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <Heading size={1} fit caps>
-            Integrate in the small
-          </Heading>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              Merge into <Keyword>master</Keyword> daily
-            </Heading>
-          </Appear>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              <Keyword>Smaller</Keyword> stories and tasks
-            </Heading>
-          </Appear>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              Feature toggles
-            </Heading>
-          </Appear>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              Branch by abstraction
-            </Heading>
-          </Appear>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={1} textColor="secondary">
             Deployment Problems
           </Heading>
         </Slide>
@@ -1234,81 +1161,6 @@ export default class Presentation extends React.Component {
           <Appear>
             <Heading size={2} fit caps textColor="primary">
               Bash, Powershell
-            </Heading>
-          </Appear>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={1} textColor="secondary">
-            User Acceptance Problems
-          </Heading>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <Heading size={1} fit caps>
-            Delayed User Feedback
-          </Heading>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              Users only see <Keyword>end product</Keyword>
-            </Heading>
-          </Appear>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              Don't know how features are <Keyword>actually</Keyword> used
-            </Heading>
-          </Appear>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              Bugs are <Keyword>discovered</Keyword> by users
-            </Heading>
-          </Appear>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={1} textColor="secondary">
-            Solutions
-          </Heading>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <Heading size={1} fit caps>
-            Constant User Feedback
-          </Heading>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              Use functional <Keyword>prototypes</Keyword> along with
-            </Heading>
-          </Appear>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              <Keyword>Live</Keyword> Alpha / Beta testing to verify
-            </Heading>
-          </Appear>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              you are heading in the <Keyword>right</Keyword> direction
-            </Heading>
-          </Appear>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <Heading size={1} fit caps>
-            Proactive Monitoring
-          </Heading>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              Use monitoring, logging, and analytics
-            </Heading>
-          </Appear>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              to inspect how your application
-            </Heading>
-          </Appear>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              is <Keyword>actually</Keyword> being used
-            </Heading>
-          </Appear>
-          <Appear>
-            <Heading size={2} fit caps textColor="primary">
-              identify bugs <Keyword>before</Keyword> users complain
             </Heading>
           </Appear>
         </Slide>
